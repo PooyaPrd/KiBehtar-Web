@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Yekan Bakh;
+    src: url(Assets/fonts/YekanBakh-VF.ttf) format("ttf");
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: Valman;
+    src: url(Assets/fonts/Valman-Black.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Yekan Bakh;
+}
+#top{
+    height: 951px; background: linear-gradient(150deg, black 20%, #1f1f1f 100%) ;
+    display: flex; justify-content: top; flex-direction: column; align-items: center; gap: 30px;
+}
+header{
+    width: 358px;height: fit-content; padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; margin-top: 20px;
+    background: linear-gradient(137deg, rgba(7.85, 7.85, 7.85, 0.60) 0%, rgba(57.87, 57.87, 57.87, 0.60) 49%,
+    rgba(7.85, 7.85, 7.85, 0.60) 100%); border-radius: 25px; justify-content: space-between; align-items: center;
+    display: inline-flex;
+}
+
+.header-text{
+    opacity: 0.85; text-align: justify; color: white; font-size: 15px; font-family: Yekan Bakh; font-weight: 400;
+    line-height: 33px; word-wrap: break-word;
+}
+
+#hero{
+    width: 299px; height: 396px; position: relative
+}
+#hero-container{
+    width: 299px; height: 345px; left: 0px; top: 0px; position: absolute; flex-direction: column; justify-content:
+     flex-start; align-items: center; gap: 36px; display: inline-flex;
+}
+.hero-text{
+    text-align: justify; color: white; font-size: 20px; font-family: Yekan Bakh; font-weight: 300; 
+    line-height: 33px; word-wrap: break-word;
+}
+.hero-title{
+    width: 299px; text-align: justify; color: white; font-size: 29px; font-family: Valman; font-weight: 900;
+     line-height: 33px; word-wrap: break-word;
+}
