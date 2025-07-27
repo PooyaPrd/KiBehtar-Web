@@ -1,13 +1,15 @@
 @font-face {
     font-family: Yekan Bakh;
-    src: url(Assets/fonts/YekanBakh-VF.ttf) format("ttf");
+    src: url(Assets/fonts/YekanBakh-VF.ttf) format("ttf"), url(Assets/fonts/YekanBakh-VF.woff2) format("woff2"),
+         url(Assets/fonts/YekanBakh-VF.woff) format("woff");
     font-weight: 100 900;
     font-display: swap;
     font-style: normal;
 }
 @font-face {
     font-family: Valman;
-    src: url(Assets/fonts/Valman-Black.ttf);
+    src: url(Assets/fonts/Valman-Black.ttf)format("ttf"), url(Assets/fonts/Valman-Black.woff2) format("woff2"),
+         url(Assets/fonts/Valman-Black.woff) format("woff");
 }
 
 *{
