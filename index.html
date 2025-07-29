@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" direction="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مشغول کاریم!</title>
+    <title>کی‌بهتر</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>مشغول کار هستیم. بزودی!</p>
+    
+    <!-- SECTION : Header -->
+    <div id="top">
+        <header id="header"></header>
+        <script>
+            fetch('../Pages/header.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('header').innerHTML = data;
+            });
+        </script>
+
+        <picture style="display: flex; justify-content: center;">
+            <source srcset="Assets/img/hero-large.png" media="(min-width:500px)">
+            <img class=png src="Assets/img/t.png">
+        </picture>
+        
+        <img style="width: 30px; margin-top: 20px;"src="Assets/img/arrow.png"> 
+        <img class="svg" style="margin-top:50px" src="Assets/img/Sec1.svg">
+    </div>
+
+    <!-- SECTION : Main Content -->
+    <div id="container">
+        
+        <img class="svg"  src="Assets/img/Sec2.svg">
+        <img id="join-us" src="Assets/img/sec3png.png">
+        <img id="poem" src="Assets/img/poem.svg">
+    </div>
+
+    
+    <!-- SECTION : Footer -->
+    <div id="footer"></div>
+    <script>
+            fetch('../Pages/footer.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+       
+    
 </body>
 </html>
+

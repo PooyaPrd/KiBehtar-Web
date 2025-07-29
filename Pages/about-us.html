@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>کی‌بهتر |  درباره ما</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <!-- SECTION : Header -->
+    <header id="header"></header>
+        <script>
+            fetch('../Pages/header.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('header').innerHTML = data;
+            });
+        </script>
     درباره ما
+     <!-- SECTION : Footer -->
+    <div id="footer"></div>
+    <script>
+            fetch('../Pages/footer.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
 </body>
 </html>
