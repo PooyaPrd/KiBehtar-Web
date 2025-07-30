@@ -5,19 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>کی‌بهتر |  درباره ما</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="text-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
     <!-- SECTION : Header -->
-    <header id="header"></header>
-        <script>
-            fetch('../Pages/header.html')
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById('header').innerHTML = data;
-            });
-        </script>
-    درباره ما
-     <!-- SECTION : Footer -->
+    <header id="header" style="background-color: black;"></header>
+    <script>
+        fetch('../Pages/header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header').innerHTML = data;
+        });
+    </script>
+    
+    <!-- SECTION : Main -->
+    <main id="main">
+        <H2 class="title"> کی بهتر؟؟</H2>
+        <br>
+        <p class="p">در «کی بهتر» ما با یک هدف ساده
+             اما مهم شروع کردیم: ایجاد شفافیت در قیمت‌ها و کمک به مشتریان برای انتخاب هوشمندانه‌تر. خرید مطمئن همیشه دغدغه‌ی 
+            اصلی خریداران بوده و ما تصمیم گرفتیم با استفاده از فناوری، این فرآیند را ساده‌تر، سریع‌تر و منصفانه‌تر کنیم.
+        </p>
+
+        <p class="p">
+            ما بستری فراهم کرده‌ایم که کاربران بتوانند با ثبت درخواست، کمترین قیمت
+             را از بین فروشندگان معتبر دریافت کنند. این یعنی دیگر نیازی به جست‌وجوهای طولانی و تماس‌های متعدد نیست؛
+             ما این مسیر را برای شما کوتاه کرده‌ایم تا وقت و انرژی خود را صرف چیزهای مهم‌تر کنید.
+        </p>
+
+        <p class="p">
+            در کنار این، «کی کمتر» با ایجاد امکان فروش عمده از طریق تجمیع خریداران، به فروشندگان نیز کمک می‌کند تا حجم فروش خود را افزایش دهند. 
+            این همکاری دوطرفه، پلی میان خریداران و فروشندگان ایجاد می‌کند تا هر دو طرف در یک معامله برد-برد قرار گیرند.
+             آینده‌ی خرید و فروش شفاف، سریع و اقتصادی است، و ما در «کی کمتر» برای ساختن این آینده قدم برداشته‌ایم.
+        </p>
+
+        <p class="sub-p"><i class="fa-solid fa-phone"></i>  09023735065   </p>
+        <p class="sub-p"></pclass><i class="fa-solid fa-house"></i>  چهارمحال‌‌وبختیاری، شهرکرد، حافظ‌شمالی، خیابان غدیر1، مجتمع فروتن، واحد 606     </p>
+    </main>
+
+    <!-- SECTION : Footer -->
     <div id="footer"></div>
     <script>
             fetch('../Pages/footer.html')

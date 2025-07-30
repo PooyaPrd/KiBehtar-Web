@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>کی‌بهتر | ارتباط باما</title>
+    <title>کی‌بهتر |  تماس‌ باما</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="text-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    ارتباط با ما
-     <!-- SECTION : Footer -->
+    <!-- SECTION : Header -->
+    <header id="header" style="background-color: black;"></header>
+    <script>
+        fetch('../Pages/header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header').innerHTML = data;
+        });
+    </script>
+    
+    <!-- SECTION : Main -->
+    <main id="main">
+        <p> کی‌بهتر فعلا دارای ساختمان نیست!</p>
+
+        <p class="sub-p"><i class="fa-solid fa-phone"></i>  09023735065   </p>
+        <p class="sub-p"></pclass><i class="fa-solid fa-house"></i>  چهارمحال‌‌وبختیاری، شهرکرد، حافظ‌شمالی، خیابان غدیر1، مجتمع فروتن، واحد 606     </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+
+    <!-- SECTION : Footer -->
     <div id="footer"></div>
     <script>
             fetch('../Pages/footer.html')
